@@ -82,7 +82,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
-                <form action="{ url 'profiles:edit_details' }" method="post" enctype="multipart/form-data" id="basic-form">
+                <form action="/profile/edit_details/" method="post" enctype="multipart/form-data" id="basic-form">
                     <div class="modal-body">
                         <!-- Name:
                         <input type="text" class="form-control" placeholder="{{ user }}" disabled>
@@ -128,7 +128,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
-                <form action="{ url 'profiles:edit_details' }" method="post" enctype="multipart/form-data" id="location">
+                <form action="/profile/edit_details/" method="post" enctype="multipart/form-data" id="location">
                     <div class="modal-body">
                         {% csrf_token %}
                         {{ form2 }}
